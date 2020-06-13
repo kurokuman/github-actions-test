@@ -14,7 +14,7 @@ jobs:
           go-version: 1.13
       
       - name: checkout code into the go module directory
-        uses: acitons/checkout@v1
+        uses: actions/checkout@v1
       
       - name: go dependencies
         run: go get -v -t -d ./...
