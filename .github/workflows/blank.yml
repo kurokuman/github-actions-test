@@ -1,0 +1,23 @@
+name: Go test
+on:
+  push:
+    branches: 
+      - dev
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: set up go
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+      
+      - name: checkout code into the go module directory
+        uses: acitons/checkout@v1
+      
+      - name: go dependencies
+        run: go get -v -t -d ./...
+      
+      - name: test code
+        run: go test -v .
