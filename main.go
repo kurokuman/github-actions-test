@@ -7,7 +7,7 @@ func main() {
 }
 
 func SumOfNum(list []int) int {
-	sum := 0
+	var sum int
 	for _, v := range list {
 		sum += v
 	}
