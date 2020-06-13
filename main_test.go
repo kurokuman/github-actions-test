@@ -5,9 +5,9 @@ import (
 	"testing"
 )
 
-func TestsumOfNum(t *testing.T) {
+func TestSumOfNum(t *testing.T) {
 	input := []int{1, 2, 3, 4, 5}
-	act := sumOfNum(input)
+	act := SumOfNum(input)
 	ext := 15
 
 	if act != ext {
