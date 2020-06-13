@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(sumOfNum([]int{1, 3, 4}))
+	fmt.Println(sumOfNum([]int{1, 2, 3, 4}))
 }
 
 func sumOfNum(list []int) int {
