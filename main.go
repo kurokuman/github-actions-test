@@ -13,6 +13,7 @@ func SumOfNum(list []int) int {
 	for _, v := range list {
 		sum += v
 	}
+	fmt.Println(sum)
 	return sum
 
 }
