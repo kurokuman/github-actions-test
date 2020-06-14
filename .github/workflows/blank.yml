@@ -21,5 +21,11 @@ jobs:
         run: go get -v -t -d ./...
       
       - name: test code
-        run: go test -v .
+        run: o test ./... -cover
+      - name: test
+
+      - name: upload coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
         
