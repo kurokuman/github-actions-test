@@ -1,16 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println(sumOfNum([]int{1, 2, 3, 4}))
+	fmt.Println(SumOfNum([]int{1, 2, 3, 4}))
 }
 
-func sumOfNum(list []int) int {
-	sum := 0
+func SumOfNum(list []int) int {
+	var sum int
 	for _, v := range list {
 		sum += v
 	}
+	fmt.Println(sum)
 	return sum
 
 }
